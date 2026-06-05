@@ -1,181 +1,153 @@
 {
-  "workbench.startupEditor": "newUntitledFile", // Abre um novo arquivo sem título ao iniciar o VS Code.
-  "editor.fontSize": 15, // Define o tamanho da fonte do editor para 15.
-  "editor.lineHeight": 1.8, // Define a altura da linha do editor para 1.8.
-  "javascript.suggest.autoImports": true, // Ativa as sugestões automáticas de importações no JavaScript.
-  "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza as importações ao mover arquivos JavaScript.
-  "editor.rulers": [80, 120], // Adiciona guias visuais nas colunas 80 e 120 no editor.
-  "extensions.ignoreRecommendations": true, // Ignora as recomendações de extensões.
-  "typescript.tsserver.log": "off", // Desativa o log do servidor TypeScript.
-  "editor.stickyScroll.enabled": false, // Desativa a rolagem aderente no editor.
-  "workbench.tree.enableStickyScroll": false, // Desativa a rolagem aderente na árvore do explorador.
-  "files.associations": { // Define associações de arquivos para tipos específicos.
-    ".env.*": "dotenv",
-    ".prettierrc": "json",
-    "*.css": "css",
-    ".dev.vars": "dotenv"
-  },
-  "symbols.files.associations": { // Define associações de arquivos para símbolos específicos.
-    "*.module.ts": "nest",
-    "*.guard.ts": "typescript",
-    "*.spec.ts": "ts-test",
-    "*.e2e-spec.ts": "ts-test",
-    "*.mock.ts": "ts-test",
-    "vitest.config.e2e.ts": "vite",
-    ".env.development.local": "gear",
-    ".env.test.local": "gear",
-    ".env.local": "gear",
-    ".env.example": "gear"
-  },
-  "tailwindCSS.experimental.classRegex": [ // Define regex para classes experimentais do Tailwind CSS.
-    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    "class:\\s*?[\"'`]([^\"'`]*).*?,"
-  ],
-  "editor.parameterHints.enabled": false, // Desativa as dicas de parâmetros no editor.
-  "editor.renderLineHighlight": "gutter", // Realça a linha atual no gutter (margem esquerda).
-  "cSpell.language": "en,pt", // Define os idiomas para a verificação ortográfica (inglês e português).
-  "typescript.updateImportsOnFileMove.enabled": "always", // Atualiza as importações ao mover arquivos TypeScript.
-  "editor.suggestSelection": "first", // Seleciona a primeira sugestão automaticamente.
-  "explorer.confirmDelete": false, // Desativa a confirmação ao excluir arquivos no explorador.
-  "gitlens.codeLens.recentChange.enabled": false, // Desativa a exibição das alterações recentes no GitLens.
-  "terminal.integrated.showExitAlert": false, // Desativa o alerta de saída do terminal integrado.
-  "[prisma]": { // Configuração específica para arquivos Prisma.
-    "editor.formatOnSave": true
-  },
-  "typescript.suggest.autoImports": true, // Ativa as sugestões automáticas de importações no TypeScript.
-  "typescript.preferences.preferTypeOnlyAutoImports": true, // Prefere importações automáticas de tipo apenas no TypeScript.
-  "terminal.integrated.env.osx": { // Configurações de ambiente do terminal integrado no macOS.
-    "FIG_NEW_SESSION": "1"
-  },
-  "workbench.editor.labelFormat": "short", // Usa um formato curto para rótulos de editor na área de trabalho.
-  // "editor.fontLigatures": true, // (Comentado) Ativa as ligaduras de fonte no editor.
-  "emmet.includeLanguages": { // Inclui o Emmet para linguagens específicas.
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": { // Define perfis de sintaxe do Emmet.
-    "javascript": "jsx"
-  },
-  "cSpell.enableFiletypes": [ // Desativa a verificação ortográfica para tipos de arquivos específicos.
-    "!asciidoc",
-    "!c",
-    "!cpp",
-    "!csharp",
-    "!go",
-    "!handlebars",
-    "!haskell",
-    "!jade",
-    "!java",
-    "!latex",
-    "!php",
-    "!pug",
-    "!python",
-    "!restructuredtext",
-    "!rust",
-    "!scala",
-    "!scss"
-  ],
-  "editor.acceptSuggestionOnCommitCharacter": false, // Desativa a aceitação de sugestões com caracteres de confirmação.
-  "explorer.compactFolders": false, // Desativa a exibição compacta de pastas no explorador.
-  "git.enableSmartCommit": true, // Ativa o commit inteligente no Git.
-  "editor.accessibilitySupport": "off", // Desativa o suporte a acessibilidade no editor.
-  "explorer.confirmDragAndDrop": false, // Desativa a confirmação ao arrastar e soltar no explorador.
-  "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal integrado para 14.
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font", // Define a família de fontes do terminal integrado.
-  "editor.codeActionsOnSave": { // Define ações de código a serem executadas ao salvar.
-    "source.fixAll.eslint": "explicit"
-  },
-  "eslint.validate": [ // Valida arquivos específicos com ESLint.
-    "javascript",
-    "javascriptreact",
-    "graphql"
-  ],
-  "editor.semanticHighlighting.enabled": false, // Desativa o destaque semântico no editor.
-  "breadcrumbs.enabled": false, // Desativa os breadcrumbs no editor.
-  "workbench.productIconTheme": "fluent-icons", // Define o tema de ícones do produto como "fluent-icons".
-  "editor.fontFamily": "JetBrains Mono", // Define a família de fontes do editor.
-  "gitlens.codeLens.authors.enabled": false, // Desativa a exibição de autores no GitLens.
-  "editor.tabSize": 2, // Define o tamanho da tabulação como 2 espaços.
-  "security.workspace.trust.untrustedFiles": "newWindow", // Abre arquivos não confiáveis em uma nova janela.
-  "files.exclude": { // Exclui arquivos e pastas específicos do explorador.
-    "**\/CVS": true,
-    "**\/.DS_Store": true,
-    "**\/.hg": true,
-    "**\/.svn": true,
-    "**\/.git": true,
-    ".vscode": true
-    // "node_modules": true
-  },
-  "workbench.iconTheme": "symbols", // Define o tema de ícones da área de trabalho como "symbols".
-  "update.mode": "default", // Define o modo de atualização como padrão.
-  "terminal.integrated.gpuAcceleration": "on", // Ativa a aceleração GPU no terminal integrado.
-  "terminal.integrated.defaultProfile.osx": "fish", // Define o perfil padrão do terminal no macOS como "fish".
-  "[jsonc]": { // Configuração específica para arquivos JSONC.
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[json]": { // Configuração específica para arquivos JSON.
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "window.commandCenter": false, // Desativa o centro de comandos na janela.
-  "git.openRepositoryInParentFolders": "always", // Abre repositórios Git em pastas pai sempre.
-  "symbols.hidesExplorerArrows": false, // Não esconde as setas do explorador de símbolos.
-  "[javascript]": { // Configuração específica para arquivos JavaScript.
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "console-ninja.featureSet": "Community", // Define o conjunto de recursos do Console Ninja como "Community".
-  "workbench.editor.empty.hint": "hidden", // Oculta a dica de editor vazio na área de trabalho.
-  "update.showReleaseNotes": false, // Não mostra notas de lançamento após atualizações.
-  "security.promptForLocalFileProtocolHandling": false, // Não solicita ao lidar com protocolos de arquivos locais.
-  "workbench.activityBar.location": "hidden", // Oculta a barra de atividades na área de trabalho.
-  "apc.activityBar": { // Configurações da barra de atividades para a extensão "apc".
-    "position": "bottom",
-    "hideSettings": true,
-    "size": 48,
-    "itemMargin": 8,
-    "itemSize": 32
-  },
-  "editor.hideCursorInOverviewRuler": true, // Oculta o cursor na régua de visão geral.
-  "editor.minimap.enabled": false, // Desativa a miniatura do código no editor.
-  "window.titleBarStyle": "native", // Define o estilo da barra de título da janela como nativo.
-  "apc.electron": { // Configurações do Electron para a extensão "apc".
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 11,
-      "y": 10
-    },
-    "opacity": 1,
-    "vibrancy": "dark",
-    "frame": false
-  },
-  "apc.header": { // Configuração do cabeçalho para a extensão "apc".
-    "height": 36
-  },
-  "apc.listRow": { // Configuração das linhas da lista para a extensão "apc".
-    "height": 24
-  },
-  "apc.font.family": "Inter", // Define a família de fontes para a extensão "apc".
-  "apc.stylesheet": { // Estilos personalizados para a extensão "apc".
-    ".title-label > h2": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".pane-header": "padding: 0 8px",
-    ".pane-body": "padding: 8px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  },
-  "editor.scrollbar.vertical": "hidden", // Oculta a barra de rolagem vertical no editor.
-  "explorer.sortOrder": "foldersNestsFiles", // Ordena o explorador por pastas, aninhamentos e arquivos.
-  "explorer.fileNesting.patterns": { // Define padrões de aninhamento de arquivos no explorador.
+  // 📝 --- SALVAMENTO AUTOMÁTICO ---
+  "files.autoSave": "afterDelay", // Salva arquivos automaticamente após um pequeno tempo de inatividade
+  "files.autoSaveDelay": 3000, // Tempo de espera (em ms) antes de salvar automaticamente - AUMENTADO para evitar conflitos
+
+  // 🎨 --- FORMATAÇÃO ---
+  "editor.formatOnSave": true, // Formata o código ao salvar
+  "editor.formatOnPaste": true, // Formata automaticamente ao colar
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Usa o Prettier como formatador padrão
+
+  // Formatadores específicos por linguagem
+  "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // 🪄 --- INTERFACE E EDITOR ---
+  "workbench.startupEditor": "newUntitledFile", // Abre um novo arquivo em branco ao iniciar
+  "editor.fontSize": 13, // Tamanho da fonte no editor
+  "editor.lineHeight": 1.8, // Altura da linha (espaçamento vertical)
+  "editor.tabSize": 2, // Tamanho da tabulação
+  "editor.fontFamily": "JetBrains Mono", // Fonte usada no editor
+  "editor.renderLineHighlight": "gutter", // Destaca a linha atual na margem esquerda
+  "editor.parameterHints.enabled": false, // Desativa dicas de parâmetros flutuantes
+  "editor.stickyScroll.enabled": false, // Desativa cabeçalhos fixos durante rolagem
+  "editor.minimap.enabled": false, // Oculta o mapa de código lateral
+  "editor.semanticHighlighting.enabled": false, // Desativa cores semânticas adicionais
+  "editor.accessibilitySupport": "off", // Desativa recursos de acessibilidade
+  "editor.hideCursorInOverviewRuler": false, // Oculta o cursor na régua lateral
+  "editor.suggestSelection": "first", // Seleciona a primeira sugestão automaticamente
+  "editor.acceptSuggestionOnCommitCharacter": false, // Impede aceitar sugestões com caracteres como ponto e vírgula
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }, // Corrige problemas do ESLint ao salvar
+
+  // 📁 --- EXPLORADOR DE ARQUIVOS ---
+  "explorer.compactFolders": false, // Exibe cada pasta em sua própria linha (sem agrupamento)
+  "explorer.confirmDelete": false, // Desativa confirmação ao excluir
+  "explorer.confirmDragAndDrop": false, // Desativa confirmação ao arrastar arquivos
+  "explorer.sortOrder": "foldersNestsFiles", // Ordena pastas antes dos arquivos
+  "explorer.fileNesting.enabled": true, // Ativa agrupamento de arquivos relacionados
+  "explorer.fileNesting.patterns": {
     "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
     "tailwind.config.*": "tailwind.config*, postcss.config*",
     ".env.local": ".env*",
     ".env": ".env*"
   },
-  "explorer.fileNesting.enabled": true, // Ativa o aninhamento de arquivos no explorador.
-  "workbench.statusBar.visible": false, // Oculta a barra de status na área de trabalho.
-  "editor.tokenColorCustomizations": { // Personalizações de cores de tokens no editor.
-    "textMateRules": []
+
+  // 🌈 --- ASSOCIAÇÕES DE ARQUIVOS ---
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css",
+    ".dev.vars": "dotenv"
   },
-  "workbench.layoutControl.enabled": false, // Desativa o controle de layout na área de trabalho.
-  "workbench.colorTheme": "Catppuccin Latte" // Define o tema de cores da área de trabalho como "Catppuccin Latte".
+
+  // 🔄 --- GIT E GITLENS ---
+  "git.enableSmartCommit": true, // DESABILITADO - causava problemas de conexão
+  "git.openRepositoryInParentFolders": "never", // ALTERADO - evita perder conexão com repositórios
+  "git.autoRepositoryDetection": true, // Detecta repositórios automaticamente
+  "git.autofetch": false, // DESABILITADO - evita conflitos
+  "git.confirmSync": false, // Pede confirmação antes de sincronizar
+  "gitlens.codeLens.recentChange.enabled": false, // Desativa exibição de quem alterou o código
+  "gitlens.codeLens.authors.enabled": false, // Desativa exibição de autores do código
+
+  // 🧠 --- JAVASCRIPT / TYPESCRIPT ---
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "eslint.validate": ["javascript", "javascriptreact", "graphql"],
+
+  // 💄 --- TEMA E APARÊNCIA ---
+  "workbench.iconTheme": "material-icon-theme", // Ícones minimalistas estilo macOS
+  "workbench.productIconTheme": "fluent-icons", // Ícones gerais do VS Code
+  "workbench.colorTheme": "Dracula Theme", // Tema escuro Dracula
+  "workbench.statusBar.visible": true, // Mostra a barra de status
+  "workbench.layoutControl.enabled": false, // Oculta botão de layout
+  "workbench.editor.labelFormat": "short", // Mostra nomes curtos de abas
+  "workbench.editor.empty.hint": "hidden", // Oculta a dica quando o editor está vazio
+  "window.titleBarStyle": "native", // Usa barra de título do macOS
+
+  // 💻 --- TERMINAL ---
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font", // Fonte do terminal
+  "terminal.integrated.fontSize": 14, // Tamanho da fonte do terminal
+  "terminal.integrated.showExitAlert": false, // Remove alerta ao sair
+  "terminal.integrated.gpuAcceleration": "on", // Usa aceleração por GPU
+
+  // ⚡ --- EMMET ---
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+
+  // 🔒 --- SEGURANÇA E ATUALIZAÇÕES ---
+  "security.workspace.trust.untrustedFiles": "newWindow", // Abre arquivos não confiáveis em nova janela
+  "update.mode": "default",
+  "update.showReleaseNotes": false,
+
+  // 🚫 --- ARQUIVOS IGNORADOS ---
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    ".vscode": true
+  },
+
+  // 🌍 --- OUTROS ---
+  "cSpell.language": "en,pt", // Idiomas do corretor ortográfico
+  "snyk.advanced.cliPath": "/Users/gabriellmatias/Library/Application Support/snyk/vscode-cli/snyk-macos-arm64",
+  "snyk.folderConfigs": [
+    {
+      "folderPath": "/Users/gabriellmatias/Desktop/tus-project",
+      "baseBranch": "",
+      "preferredOrg": "",
+      "autoDeterminedOrg": "",
+      "orgMigratedFromGlobalConfig": false,
+      "orgSetByUser": true,
+      "featureFlags": {
+        "internal_iaw_enabled": false,
+        "snykCodeConsistentIgnores": false,
+        "snykCodeInlineIgnore": false
+      },
+      "sastSettings": null
+    }
+  ],
+  "snyk.trustedFolders": ["/Users/gabriellmatias/Desktop/parc-app-front"],
+  "snyk.securityAtInception.autoConfigureSnykMcpServer": false,
+  "snyk.securityAtInception.executionFrequency": "Manual",
+  "snyk.yesWelcomeNotification": false,
+  "snyk.scanningMode": "manual",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "explorer.confirmPasteNative": false,
+
+  // 🛡️ --- PROTEÇÕES CONTRA PROBLEMAS ---
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.hg/store/**": true
+  },
+  "files.hotExit": "onExitAndWindowClose",
+  "files.useExperimentalFileWatcher": false,
+  "workbench.editor.autoLockGroups": {
+    "default": false
+  },
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+  "sonarlint.analysisExcludesStandalone": "**/.pytest_cache/**",
+  "sonarlint.focusOnNewCode": false,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "security.promptForLocalFileProtocolHandling": false,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.browser.openLocalhostLinks": false
 }
