@@ -102,33 +102,6 @@
     ".vscode": true
   },
 
-  // 🌍 --- OUTROS ---
-  "cSpell.language": "en,pt", // Idiomas do corretor ortográfico
-  "snyk.advanced.cliPath": "/Users/gabriellmatias/Library/Application Support/snyk/vscode-cli/snyk-macos-arm64",
-  "snyk.folderConfigs": [
-    {
-      "folderPath": "/Users/gabriellmatias/Desktop/tus-project",
-      "baseBranch": "",
-      "preferredOrg": "",
-      "autoDeterminedOrg": "",
-      "orgMigratedFromGlobalConfig": false,
-      "orgSetByUser": true,
-      "featureFlags": {
-        "internal_iaw_enabled": false,
-        "snykCodeConsistentIgnores": false,
-        "snykCodeInlineIgnore": false
-      },
-      "sastSettings": null
-    }
-  ],
-  "snyk.trustedFolders": ["/Users/gabriellmatias/Desktop/parc-app-front"],
-  "snyk.securityAtInception.autoConfigureSnykMcpServer": false,
-  "snyk.securityAtInception.executionFrequency": "Manual",
-  "snyk.yesWelcomeNotification": false,
-  "snyk.scanningMode": "manual",
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "explorer.confirmPasteNative": false,
-
   // 🛡️ --- PROTEÇÕES CONTRA PROBLEMAS ---
   "files.watcherExclude": {
     "**/.git/objects/**": true,
